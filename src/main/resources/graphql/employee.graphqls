@@ -1,26 +1,25 @@
 type Query {
   employees: [Employee]
   employeeById(id: ID!): Employee
-  employeeByNumber(employeeNumber: Int!): Employee
 }
 
 type Employee {
   id: ID!
-  employeeNumber: Int!
-  firstName: String!
-  lastName: String!
-  email: String!
-  position: String
-  salary: Float
+  name: String!
+  dateOfBirth: String!
+  city: String!
+  salary: Float!
+  gender: String
+  email: String
 }
 
 input CreateEmployeeInput {
-  employeeNumber: Int!
-  firstName: String!
-  lastName: String!
-  email: String!
-  position: String
-  salary: Float
+  name: String!
+  dateOfBirth: String!
+  city: String!
+  salary: Float!
+  gender: String
+  email: String
 }
 
 type Mutation {

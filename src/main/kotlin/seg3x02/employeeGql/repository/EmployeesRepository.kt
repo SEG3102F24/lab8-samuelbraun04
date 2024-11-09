@@ -5,4 +5,6 @@ import org.springframework.stereotype.Repository
 import seg3x02.employeeGql.entity.Employee
 
 @Repository
-interface EmployeesRepository: MongoRepository<Employee, String>
+interface EmployeeRepository : MongoRepository<Employee, String> {
+    // fun findByEmployeeNumber(employeeNumber: Int): Employee?
+}

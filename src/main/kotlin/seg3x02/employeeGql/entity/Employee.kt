@@ -9,7 +9,7 @@ data class Employee(
         val dateOfBirth: String,
         val city: String,
         val salary: Float,
-        val gender: String?,
+        val gender: String,
         val email: String?
 ) {
     @Id
